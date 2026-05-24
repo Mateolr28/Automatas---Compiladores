@@ -1,0 +1,6 @@
+{
+  "name": "Conversor AFND a AFD",
+  "description": "Herramienta técnica interactiva para diseñar Autómatas Finitos No Deterministas (AFND) y convertirlos a Autómatas Finitos Deterministas (AFD) utilizando el método de construcción de subconjuntos, con diagramas SVG interactivos dibujados dinámicamente.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
