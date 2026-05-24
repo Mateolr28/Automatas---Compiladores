@@ -128,7 +128,7 @@ export default function DFAResultTable({ result }: Props) {
                   Nombre AFD
                 </th>
                 <th className="px-4 py-3 text-xs uppercase tracking-wider font-mono text-gray-400 font-medium">
-                  Subconjunto AFND (ε-clausura)
+                  Subconjunto AFND
                 </th>
                 <th className="px-4 py-3 text-xs uppercase tracking-wider font-mono text-gray-400 font-medium text-center w-1/4">
                   ¿Es de Aceptación?

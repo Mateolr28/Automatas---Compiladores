@@ -1,4 +1,3 @@
-// src/components/TransitionTable/TransitionTable.tsx
 import { useState, useEffect, ChangeEvent } from 'react';
 import { Play, RotateCcw, HelpCircle } from 'lucide-react';
 
@@ -68,8 +67,8 @@ export default function TransitionTable({
   onConvert,
   onReset,
 }: Props) {
-  // Los símbolos para las columnas de transiciones son el alfabeto + ε (épsilon)
-  const columns = [...alphabet, 'ε'];
+  // Los símbolos para las columnas de transiciones son el alfabeto
+  const columns = [...alphabet];
 
   return (
     <div className="space-y-4 bg-[#13161e] border border-[#2a2f3d] rounded-lg p-6 text-gray-100 font-sans" id="transition-table-container">
@@ -95,18 +94,18 @@ export default function TransitionTable({
           <thead>
             <tr className="border-b border-[#2a2f3d] bg-[#0d0f14]">
               <th className="px-4 py-3 text-xs uppercase tracking-wider font-mono text-gray-400 font-medium w-1/4">
-                Estado (q)
+                Estado
               </th>
               {columns.map((sym) => (
                 <th
                   key={`th-${sym}`}
                   className="px-4 py-3 text-xs uppercase tracking-wider font-mono text-[#4f8ef7] font-semibold text-center"
                 >
-                  δ(q, {sym})
+                  ({sym})
                 </th>
               ))}
               <th className="px-4 py-3 text-xs uppercase tracking-wider font-mono text-gray-400 font-medium text-center w-1/5">
-                Acepta (F?)
+                Acepta SÍ/NO
               </th>
             </tr>
           </thead>

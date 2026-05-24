@@ -34,7 +34,7 @@ export default function AlphabetInput({
     <div className="space-y-4 bg-[#13161e] border border-[#2a2f3d] rounded-lg p-5 text-gray-100 font-sans" id="alphabet-input-container">
       <div className="space-y-2">
         <label className="block text-xs uppercase tracking-wider text-gray-400 font-mono font-medium">
-          Alfabeto (Σ)
+          Alfabeto
         </label>
         <div className="flex gap-2">
           <input
@@ -80,12 +80,7 @@ export default function AlphabetInput({
         </div>
       </div>
 
-      <div className="flex items-start gap-2.5 p-3 bg-[#1a1e28]/50 border border-[#2a2f3d]/50 rounded-md text-xs text-gray-400 leading-relaxed font-sans">
-        <Info className="w-4 h-4 text-[#4f8ef7] shrink-0 mt-0.5" />
-        <div>
-          <span className="text-gray-200 font-semibold font-mono">Consejo:</span> El símbolo <span className="font-mono text-[#4f8ef7]">ε</span> representa transiciones espontáneas (épsilon) y estará disponible de manera automática al editar la tabla de transiciones del AFND.
-        </div>
-      </div>
+      {/* No epsilon banner to keep UI clean and corresponding to the removed epsilon column */}
     </div>
   );
 }
